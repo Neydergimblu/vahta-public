@@ -1,0 +1,85 @@
+@media (hover: hover) and (pointer: fine) {
+}
+
+.label {
+	background-color: white;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	color: #8ac926;
+	padding: 0px 2px;
+	margin-left: 10px;
+}
+
+.changeColorLabel {
+	color: #ff595e;
+}
+
+.input {
+	display: block;
+	border: 1px solid rgba(102, 102, 102, 0.5);
+	border-radius: 10px;
+	padding: 12px 12px 12px 12px;
+	color: #8ac926;
+	font-family: "Montserrat";
+	font-style: normal;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.viewValidation {
+	color: #ff595e;
+	border: 1px solid #ff595e;
+}
+
+.inputSearch {
+	padding-left: 45px;
+}
+
+.input:focus + .label {
+	border: 1px solid #8ac926;
+	transition: border ease 0.2s;
+	color: #8ac926;
+}
+
+.input:focus-visible {
+	outline: none;
+}
+
+.input::after {
+	position: absolute;
+	content: " ";
+	background-color: #666;
+	background-size: cover;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin-right: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 1000;
+}
+
+.inputGroup {
+	width: 100%;
+}
+
+.anatation {
+	padding-left: 15px;
+	color: #ff595e;
+	padding-top: 5px;
+	font-size: 12px;
+	height: 12px;
+	opacity: 0;
+}
+
+.viewAnatation {
+	opacity: 1;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}

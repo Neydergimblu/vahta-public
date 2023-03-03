@@ -1,0 +1,92 @@
+@media (hover: hover) and (pointer: fine) {
+}
+
+.formWrapper {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: fit-content;
+	max-width: 390px;
+	background: #ffffff;
+	box-shadow: 0px 0px 50px rgba(102, 102, 102, 0.15);
+	border-radius: 15px;
+	padding: 30px;
+}
+
+.logo {
+	text-align: center;
+}
+
+.logoImage {
+	/* border: 5px solid #d9f1b2; */
+	border-radius: 20px;
+}
+
+.logoTitle {
+	margin-top: 15px;
+	color: #666666;
+	opacity: 0.85;
+	font-size: 16px;
+}
+
+.logoTitleBold {
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.serviceName {
+	font-size: 24px;
+	margin-top: 24px;
+	font-weight: 700;
+	text-align: center;
+	color: #8ac926;
+}
+
+.serviceNameTitle {
+	font-size: 32px;
+	margin-top: 24px;
+	font-weight: 700;
+	text-align: center;
+	color: #999999;
+}
+
+.form {
+	margin-top: 20px;
+}
+
+.form div {
+	margin-top: 7px;
+}
+
+.warning {
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: 400;
+	text-align: center;
+	color: #ff595e;
+	display: none;
+	cursor: default;
+}
+
+.viewWarning {
+	display: block;
+}
+
+.button {
+	text-align: right;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+	.formWrapper {
+		box-shadow: none;
+		border-radius: 0px;
+		padding: 10px;
+	}
+}

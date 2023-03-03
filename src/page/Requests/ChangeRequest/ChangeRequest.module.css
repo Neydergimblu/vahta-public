@@ -1,0 +1,51 @@
+@media (hover: hover) and (pointer: fine) {
+
+}
+
+.userChangePage {
+	position: relative;
+	top:0;
+	bottom:0;
+	padding: 20px;
+	z-index: 10;
+	flex: 0 1 100%;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	min-width: 320px;
+}
+
+.userChangePage::-webkit-scrollbar {
+	width: 5px;
+}
+
+.userChangePage::-webkit-scrollbar-track {
+	background: #eee;
+}
+
+.userChangePage::-webkit-scrollbar-thumb {
+	background-color: #8ac9267e;    /* цвет плашки */
+	border-radius: 20px;       /* закругления плашки */
+	border: 1px solid transparent;  /* padding вокруг плашки */
+}
+
+
+.title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+	color: #666666;
+	margin-bottom: 15px;
+}
+
+
+
+@media (max-width: 480px) {
+	.userChangePage {
+		flex: 0 0 100%;
+	}
+}
+
+@media (max-width: 320px) {
+	
+}

@@ -1,0 +1,27 @@
+@media (hover: hover) and (pointer: fine) {
+}
+
+.logo {
+	background-image: url("/src/components/Logo/img/logo.svg");
+	width: 400px;
+	height: 65px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-moz-background-size: cover; /* Firefox 3.6 */
+	background-position: left; /* Internet Explorer 7/8 */
+	transition: all 0.1s ease;
+}
+
+@media (max-width: 768px) {
+	.logo {
+		height: 50px;
+		width: 300px;
+	}
+}
+
+@media (max-width: 480px) {
+	.logo {
+		height: 30px;
+		width: 160px;
+	}
+}

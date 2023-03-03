@@ -1,0 +1,32 @@
+@media (hover: hover) and (pointer: fine) {
+
+}
+
+.form {
+	max-width: 755px;
+}
+
+.button{
+	text-align: right;
+	margin-top: 16px;
+}
+
+.formGrid {
+	display: flex;
+	gap: 24px;
+}
+
+.formGrid div {
+	flex: 0 1 50%;
+}
+
+@media (max-width: 480px) {
+	.formGrid {
+		flex-direction: column;
+		gap: 0;
+	}
+}
+
+@media (max-width: 320px) {
+	
+}

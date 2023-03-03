@@ -1,0 +1,28 @@
+@media (hover: hover) and (pointer: fine) {
+
+}
+
+.menu {
+	width: 36px;
+	height: 36px;
+	border-radius: 10px;
+	border: #8AC926 solid 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	margin-left: 5px;
+	cursor: pointer;
+	display: none;
+}
+
+
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 480px) {
+	.menu{
+		display: inline-flex;
+	}
+}

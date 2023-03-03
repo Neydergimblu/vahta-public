@@ -1,0 +1,66 @@
+@media (hover: hover) and (pointer: fine) {
+}
+
+.page {
+	position: relative;
+	top:0;
+	bottom:0;
+	padding: 20px;
+	z-index: 10;
+	flex: 1 1 100%;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	min-width: 320px;
+}
+
+.requestCards {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	box-sizing: border-box;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+	color: #666666;
+	margin-bottom: 15px;
+}
+
+.page::-webkit-scrollbar {
+	width: 5px;
+}
+
+.page::-webkit-scrollbar-track {
+	background: #eee;
+}
+
+.page::-webkit-scrollbar-thumb {
+	background-color: #8ac9267e;    /* цвет плашки */
+	border-radius: 20px;       /* закругления плашки */
+	border: 1px solid transparent;  /* padding вокруг плашки */
+}
+
+@media (max-width: 1600px) {
+	.requestCards {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+@media (max-width: 1200px) {
+	.requestCards {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 900px) {
+	.requestCards {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	
+}

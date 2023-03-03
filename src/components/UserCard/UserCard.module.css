@@ -1,0 +1,138 @@
+@media (hover: hover) and (pointer: fine) {
+	.endLineItem:last-child div {
+		opacity: 0.5;
+		cursor: pointer;
+	}
+
+	.endLineItem:last-child div:hover {
+		opacity: 1;
+	}
+}
+
+.card {
+	background: #ffffff;
+	box-shadow: 0px 0px 10px rgba(102, 102, 102, 0.15);
+	border-radius: 10px;
+	padding: 15px;
+	min-width: 300px;
+	flex: 33.333%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	height: 100%;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #666666;
+	margin-bottom: 10px;
+}
+
+.subTitle {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #666666;
+	margin-bottom: 18px;
+}
+
+.endLine {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.endLineContent {
+	display: flex;
+	align-items: flex-end;
+}
+
+.endLineContent {
+	flex-direction: column;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.endLineItem:first-child {
+	display: flex;
+	flex-direction: column;
+	min-width: 100px;
+}
+
+.endLineItem:last-child {
+	display: flex;
+	gap: 5px;
+	width: 100%;
+	justify-content: flex-end;
+}
+
+.squareButton {
+	width: 30px;
+	height: 30px;
+	background: #8ac926;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.squareButton img {
+	width: 22.5px;
+	height: 22.5px;
+}
+
+.roleName {
+	max-width: 300px;
+	color: #8ac926;
+}
+
+@media (max-width: 768px) {
+	
+	.endLineContent {
+		flex-direction: column;
+		align-items: baseline;
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+	.endLineItem:last-child {
+		width: 100%;
+		justify-content: flex-end;
+	}
+
+	.card {
+		flex: 1 1 100%;
+		min-width: 200px;
+	}
+
+	.squareButton {
+		width: 35px;
+		height: 35px;
+		background: #8ac926;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.squareButton img {
+		width: 22.5px;
+		height: 22.5px;
+	}
+}
+
+@media (max-width: 480px) {
+	.card {
+		min-width: 150px;
+	}
+}
+
+@media (max-width: 320px) {
+}

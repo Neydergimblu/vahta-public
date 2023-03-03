@@ -1,0 +1,81 @@
+@media (hover: hover) and (pointer: fine) {
+	.settings:hover {
+		cursor: pointer;
+	}
+
+	.settings:hover>svg>path{
+		fill: #1982C4;
+	}
+}
+
+.user {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.info {
+	text-align: right;
+	margin-right: 5px;
+}
+
+.name {
+	color: #666;
+	font-size: 14px;
+	font-weight: 500;
+	opacity: 0.8;
+}
+
+.position {
+	display: inline-block;
+	color: #8AC926;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 15px;
+	max-width: 400px;
+}
+
+.avatar {
+	width: 34px;
+	height: 34px;
+	border-radius: 10px 0px 0px 10px;
+	border: #8AC926 solid 2px;
+	border-right: #8AC926 solid 1px;
+	overflow: hidden;
+}
+
+.avatar img {
+	width: 35px;
+	height: 35px;
+}
+
+.avatar div {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 35px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #8AC926;
+}
+
+.settings {
+	width: 34px;
+	height: 34px;
+	border-radius: 0px 10px 10px 0px;
+	border: #8AC926 solid 2px;
+	border-left: #8AC926 solid 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 480px) {
+	.info {
+		display: none;
+	}
+}

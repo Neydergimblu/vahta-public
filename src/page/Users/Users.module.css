@@ -1,0 +1,73 @@
+@media (hover: hover) and (pointer: fine) {
+}
+
+.user {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	padding: 20px;
+	z-index: 10;
+	flex: 0 1 100%;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	min-width: 320px;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+	color: #666666;
+	margin-bottom: 15px;
+}
+
+.function {
+	/* margin-bottom: 15px; */
+}
+
+.usersCard {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	box-sizing: border-box;
+	grid-auto-flow: row;
+}
+
+.notice {
+	color: #666666;
+	opacity: 0.8;
+}
+
+.user::-webkit-scrollbar {
+	width: 5px;
+}
+
+.user::-webkit-scrollbar-track {
+	background: #eee;
+}
+
+.user::-webkit-scrollbar-thumb {
+	background-color: #8ac9267e; /* цвет плашки */
+	border-radius: 20px; /* закругления плашки */
+	border: 1px solid transparent; /* padding вокруг плашки */
+}
+
+@media (max-width: 1270px) {
+	.usersCard {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 895px) {
+	.usersCard {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.user {
+		padding: 15px;
+		flex: 0 0 100%;
+	}
+}

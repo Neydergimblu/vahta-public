@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Сервис управления заявками на доступ в организацию "Вахта"
+Сервис позволяет пользователям создавать заявки на доступ в организацию, вести их согласование, утверждение. Сотрудники ответственные за соблюдение пропускного режима в организации видят утвержденные заявки, имеется гибкий поиск, имеется возможность зафиксировать въезд и выезд автотранспортного средства.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Cтек технологий: React, JS, HTML, CSS
+### Библиотеки: classnames, date-fns, lodash, react-css-modules, react-hook-form, react-router-dom, reset-css
+### API: собственное API на express portal-api
 
-## Available Scripts
+# Возможности сервиса:
+- Авторизация пользователя
+- Добавление, изменение и удаление пользователя (Разграничение функционала пользователей по ролям)
+- Создание, изменение и удаление заявок на доступ
+- Согласование и утверждение заявок на доступ
+- Мониторинг заявок (контроль въезда и выезда автотранспорта)
+- Функционал "Машина по регламенту"
+- Автодобавление навых заявок в раздел "Обработка заявок" и "Мониторинг"
 
-In the project directory, you can run:
+# Демонстрация функционала:
 
-### `yarn start`
+## Авторизация пользователя
+Для начала работы в сервисе пользователь должен авторизоваться под своим логином и паролем. Доступ пользователю предоставляет администратор сервиса.
+###
+![1  авторизация](https://user-images.githubusercontent.com/15674106/222142620-1bb360dc-29be-4712-8458-81cc9ebebeb8.gif)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Добавление пользователя
+###
+![2  создание пользователя ив](https://user-images.githubusercontent.com/15674106/222144791-8261b172-5d34-460a-9f53-1b7c631f802a.gif)
 
-### `yarn test`
+## Изменение пользователя
+###
+![3  изменение пользователя](https://user-images.githubusercontent.com/15674106/222144112-a28083c6-68e3-47e3-a412-43db8b9b0ad0.gif)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Удаление пользователя
+###
+![4  удаление пользователя](https://user-images.githubusercontent.com/15674106/222145234-df620e11-cefa-4c12-913b-ee02712a7a50.gif)
 
-### `yarn build`
+## Создание заявки на доступ
+В разделе "Мои заявки" пользователь может создать новую завку на проход к которой может прикрепить несколько посетителей и несколько автомобилей, указать номер договора, комментарий, период посещения и интервал времени для доступа на территорию.
+###
+![5  создание заявки](https://user-images.githubusercontent.com/15674106/222145980-7886cae6-8865-4ef4-9b93-1b38d89c0ce4.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Редактирование заявки на доступ
+Заявку в состоянии "Черновик" доступна пользователю для редактирования.
+###
+![6  изменение заявки](https://user-images.githubusercontent.com/15674106/222147177-389a3e30-e7c4-4c27-8df6-ef39265f8316.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Удаление заявки на доступ
+Заявку в состоянии "Черновик" может быть удалена пользователем.
+###
+![7  удаление заявки](https://user-images.githubusercontent.com/15674106/222148740-22cc6681-3639-4c17-9a76-18013c3c74cc.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Согласование заявки на доступ
+Пользователь с соответствующей ролью имеет право согласовать заявки переданные на согласование. Для этого ему доступен раздел "Обработка заявок".
+###
+![8  согласование заявки](https://user-images.githubusercontent.com/15674106/222149362-d2154a12-6995-4a3c-b325-25ab31383dd4.gif)
 
-### `yarn eject`
+## Утверждение заявки на доступ
+Пользователь с соответствующей ролью имеет право утверждать заявки переданные на утверждение. Это так же происходит в разделе "Обработка заявок".
+###
+![9  утверждение заявки](https://user-images.githubusercontent.com/15674106/222150214-ecbb2d45-6e78-4d19-b9ac-9e9e74b3b7d8.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Удаление (архивирование) заявки на доступ
+Заявка в статусе "Действует" может быть досрочно переведена в Архив пользователем который её создал.
+###
+![10  удаление заявки](https://user-images.githubusercontent.com/15674106/222151123-d5d6c17d-e617-4f2e-8304-55552a054646.gif)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Мониторинг заявок (контроль въезда и выезда автотранспорта)
+Сотрудник с соответствующей ролью осуществляет работу с утвержденными заявками действующими на сегодня. Можно осуществлять поиск заявок по ФИО, марке и номеру машины, договору и организации. Въезд и выезд машин прикрепленных к заявкам можно регистрировать нажимая соответствующие кнопки.
+###
+![11  мониторинг заявок](https://user-images.githubusercontent.com/15674106/222341119-b482c05c-e751-4e41-bb7f-6287e46708b8.gif)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Функционал "Машина по регламенту"
+Заказчик попросил предусмотреть возможность зафиксировать въезд и выезд на территорию автотранспортных средств для которых не предусмотрено создание заявки. Для этих целей была предусмотрена функция "Машина по регламенту".
+###
+![12  машина по регламенту](https://user-images.githubusercontent.com/15674106/222358233-29913ba9-845a-43c4-9344-6c7885ccab43.gif)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Автодобавление навых заявок в разделы "Обработка заявок" и "Мониторинг"
+Обновление заявок в указанных разделах выполнено с помощью Long Polling. Это позволило динамически обновлять заявки.
+###
+![14  автодобавление заявки](https://user-images.githubusercontent.com/15674106/222359241-06e41e7b-395d-4d97-8ff5-fc54770b8e60.gif)

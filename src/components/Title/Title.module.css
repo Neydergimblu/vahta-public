@@ -1,0 +1,45 @@
+@media (hover: hover) and (pointer: fine) {
+}
+.title {
+	display: flex;
+	align-items: center;
+}
+
+.titleText {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+	color: #666666;
+}
+
+.backButton {
+	padding: 15px 15px 15px 18px;
+	border: 1px solid #1982c4;
+	cursor: pointer;
+	display: flex;
+	margin-right: 15px;
+	border-radius: 4px;
+	align-items: center;
+	opacity: 0.5;
+}
+
+.backButton:hover {
+	opacity: 1;
+}
+
+.arrow {
+	/* display: inline-block; */
+	height: 10px;
+	width: 10px;
+	transform: rotate(45deg);
+	border-left: 1px solid #1982c4;
+	border-bottom: 1px solid #1982c4;
+	/* margin-left: 4px; */
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}

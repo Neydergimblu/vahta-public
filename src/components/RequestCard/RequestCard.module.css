@@ -1,0 +1,283 @@
+@media (hover: hover) and (pointer: fine) {
+	.buttonMenu div {
+		opacity: 0.5;
+		cursor: pointer;
+	}
+
+	.buttonMenu div:hover {
+		opacity: 1;
+	}
+}
+
+.card {
+	background: #ffffff;
+	box-shadow: 0px 0px 10px rgba(102, 102, 102, 0.15);
+	border-radius: 10px;
+	padding: 15px;
+	/* min-width: 300px; */
+	flex: 33.333%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	height: 100%;
+}
+
+.requestNumber {
+	font-size: 12px;
+	color: #666666;
+	opacity: 0.5;
+}
+
+.visitors {
+	margin-top: 13px;
+}
+
+.requestSubTitle {
+	font-size: 14px;
+	color: #666666;
+	opacity: 0.5;
+}
+
+.cars {
+	margin-top: 10px;
+}
+
+.carsList {
+	padding-top: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	color: #666666;
+	font-weight: 800;
+	opacity: 0.8;
+}
+
+.car {
+	/* line-height: 24px; */
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.gosNumber {
+	padding: 5.5px 3px;
+	border: 1px solid #666;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+.visitorsList {
+	padding-top: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	color: #666666;
+	font-weight: 800;
+	opacity: 0.8;
+	text-transform: capitalize;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #666666;
+	margin-bottom: 10px;
+}
+
+.subTitle {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #666666;
+	margin-bottom: 18px;
+}
+
+.upLine {
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.requestStatus {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	/* max-width: 120px; */
+	text-align: right;
+	position: relative;
+	left:-20px
+}
+
+.draft {
+	display: block;
+	background-color: #aaa;
+	padding: 5px 7px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.agreement {
+	display: block;
+	background-color: #1982c4;
+	padding: 5px 7px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.statement {
+	display: block;
+	background-color: #ffca3a;
+	padding: 5px 7px;
+	border-radius: 0px 5px 5px 0px;
+	
+}
+
+.approved {
+	display: block;
+	background-color: #8ac926;
+	padding: 5px 7px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.archive {
+	display: block;
+	background-color: #ff595e;
+	padding: 5px 7px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.functionLine {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: right;
+	/* margin-bottom: 15px; */
+	gap: 5px;
+}
+
+.endLine {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	flex: 1 1 auto;
+	display: flex;
+	/* margin-top: 25px; */
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.endLineContent {
+	display: flex;
+	gap:7px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.buttonMenu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	justify-content: flex-end;
+	margin-top: 15px;
+}
+
+.organization {
+	font-size: 14px;
+	color: #666666;
+	opacity: 0.5;
+}
+
+.contract {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	opacity: 0.5;
+}
+
+.contractNumber {
+	font-size: 14px;
+	color: #8ac926;
+	font-weight: 600;
+}
+
+.creator {
+	color: #666;
+	font-size: 12px;
+}
+
+.creatorFio {
+	font-weight: 600;
+	text-transform: capitalize;
+	color: #666;
+	
+}
+
+.squareButton {
+	width: 30px;
+	height: 30px;
+	background: #8ac926;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.squareButton img {
+	width: 22.5px;
+	height: 22.5px;
+}
+
+.roleName {
+	color: #666;
+	font-weight: 600;
+}
+
+.interval {
+	color: #666;
+}
+
+@media (max-width: 768px) {
+	.card {
+		flex: 1 1 100%;
+		min-width: 200px;
+	}
+
+	.squareButton {
+		width: 35px;
+		height: 35px;
+		background: #8ac926;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.squareButton img {
+		width: 22.5px;
+		height: 22.5px;
+	}
+
+	.endLineContent {
+		flex-direction: column;
+		align-items: baseline;
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+
+	.endLineItem {
+		max-width: none;
+		width: 100%;
+		justify-content: flex-end;
+	}
+}
+
+@media (max-width: 480px) {
+	.card {
+		min-width: 150px;
+	}
+}
+
+@media (max-width: 320px) {
+	
+}

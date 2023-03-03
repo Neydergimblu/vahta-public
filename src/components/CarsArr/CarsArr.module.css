@@ -1,0 +1,42 @@
+@media (hover: hover) and (pointer: fine) {
+
+}
+
+.formGridHorizontal {
+	display: flex;
+	gap: 24px;
+}
+
+.formGridHorizontal> div {
+	flex: 0 1 50%;
+}
+
+.addVisitor {
+	border: none;
+	background: none;
+	color:#8ac926;
+	text-align: start;
+	margin-top: 15px;
+	text-decoration: underline;
+	font-size: 16px;
+	font-weight: 600;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.addVisitor:hover {
+	opacity: 1;
+}
+
+.addVisitor:hover:active {
+	transform: translateY(2px);
+}
+
+
+@media (max-width: 480px) {
+	
+}
+
+@media (max-width: 320px) {
+	
+}

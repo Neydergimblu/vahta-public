@@ -1,0 +1,51 @@
+@media (hover: hover) and (pointer: fine) {
+	.item:hover {
+		color: #ff595e;
+	}
+}
+.link {
+	text-decoration: none;
+}
+
+.item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+.icon {
+	width: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	font-weight: 400;
+	font-size: 14px;
+	color: #666666;
+}
+
+.title:hover {
+	color:#8AC926; 
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 480px) {
+	.item {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.title {
+		font-size: 14px;
+	}
+}
