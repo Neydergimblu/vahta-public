@@ -3,7 +3,7 @@
 
 ### Cтек технологий: React, JS, HTML, CSS
 ### Библиотеки: classnames, date-fns, lodash, react-css-modules, react-hook-form, react-router-dom, reset-css
-### API: собственное API на express portal-api
+### API: собственное API на express.js
 
 # Возможности сервиса:
 - Авторизация пользователя
